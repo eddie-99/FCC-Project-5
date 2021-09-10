@@ -1,0 +1,35 @@
+/*font-family: "Gotham-Book","Helvetica Neue",sans-serif;
+line-height: 1.2;
+font-size: 16px;
+color: #373737;
+font-family: "Gotham-Medium","Helvetica Neue",sans-serif;
+*/
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0em;
+}
+
+#welcome-section{
+    display: block;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 815px){
+    #navbar {
+        background-color: black;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+}}
