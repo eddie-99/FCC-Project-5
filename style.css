@@ -87,16 +87,70 @@ p{
 
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 100px;
     width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    padding: 0px 200px 0px 200px;
+    margin-bottom: 8rem;
+}
+
+.projects-grid > a:hover{
+    text-decoration: none;
+}
+
+
+.project-image {
+    height: calc(100% - 0rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+
+img {
+    display: block;
+    width: 100%;
 }
 
 .project-tile{
-    color: black;
+    color: white;
+}
+
+.project-title{
+    background-color: black;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    border-radius: 2px;
+}
+
+#profile-link{
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#profile-link:hover{
+    background-color: red;
+}
+
+/*SECTION CONTACT*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    justify-content: center;
 }
 
 
