@@ -147,17 +147,52 @@ img {
 #contact{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    background-color: black;
-    color: white;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
+    height: 80vh;
+    color: white;
+    background-color: black;
 }
 
+.contact-header > h2{
+    font-size: 70px;
+}
 
+.contact-header > p{
+    font-size: 20px;
+}
 
+.contact-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
 
+.email{
+    background-color: red;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+}
 
-
+/*END*/
+footer{
+    height: 10vh;
+    background-color: gray;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+}
 
 
 @media only screen and (max-width: 815px){
