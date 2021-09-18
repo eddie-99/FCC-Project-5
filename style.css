@@ -201,16 +201,38 @@ footer{
     }
 
     #navbar {
+        display: flex block;
         background-color: black;
-        position: absolute;
-        top: 0;
-        padding: 0;
-        margin: 0;
         width: 100%;
-        max-height: 275px;
+        position: absolute;
+        max-height: 0px;
         border: none;
-        z-index: 1;
-}
+    }
+
+    .nav-logo { 
+        display: flex;
+        width: 0%;
+    }
+
+    .nav-list{
+        display: flex;
+        padding-top: 170px;
+        margin: 0px;
+        justify-content: center;
+        width: 0%;
+    }
+
+    a{
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    ul li{
+        list-style: none;
+        text-decoration: none;
+    }
+
+
     #welcome-section{
         display: flex;
         flex-direction: column;
@@ -223,16 +245,18 @@ footer{
         background: black;
     }
 
+
     #projects{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
+        width: 100%;
         background-color: whitesmoke
     }
 
     #projects > h2{
-        padding-top: 100px;
+        padding-top: 30px;
         text-align: center;
         margin: 0 auto 6rem auto;
         border-bottom: 0.2rem solid black;
@@ -272,6 +296,19 @@ footer{
         margin-bottom: 8rem;
         cursor: pointer;
         border-radius: 5px;
+    }
+    
+    #profile-link:hover{
+        background-color: red;
+    }
+
+    footer{
+        height: 15vh;
+        background-color: gray;
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+        color: white;
     }
 
 }
